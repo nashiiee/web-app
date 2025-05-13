@@ -1,0 +1,41 @@
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+header{
+  background-color: rgb(255, 163, 70);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1{
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #000000;
+}
+
+ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p{
+  margin: 0;
+}
