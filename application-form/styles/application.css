@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+input {
+  border: 1px solid black !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+
+input[type="file"] {
+  width: 60%;
+}
+
+textarea {
+  border: 1px solid black !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+}
+textarea::placeholder {
+  color: black !important;
+}
+
+select {
+  display: block !important;
+  border: 1px solid black !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+}
+
+input::placeholder {
+  color: black !important;
+}
+
+.file-input {
+  border: none !important;
+}

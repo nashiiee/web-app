@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/application.css">
+</head>
+<body class="min-h-screen flex items-center justify-center bg-sky-900	">
+  <div class="flex flex-col items-center w-full">
+    <h1 class="text-center text-4xl mb-4 text-white">Job Application Form</h1>
+    <form method="POST" action="application.php" class="border-2 p-4 rounded-lg shadow-lg space-y-2 w-4/12	bg-white">
+      <div class="grid grid-cols-2 grid-rows-2 gap-2">
+        <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+        <input type="text" name="email" id="email" placeholder="Email Address" required>
+        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+      </div>
+      <select name="country" id="country" required>
+        <option value="" disabled selected>Select Country</option>
+        <option value="usa">Philippines</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+        <option value="india">India</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <option value="japan">Japan</option>  
+        <option value="china">China</option>
+        <option value="brazil">Brazil</option>
+        <option value="south-africa">South Africa</option>
+        <option value="mexico">USA</option>
+      </select>
+      <input type="text" name="city" id="city" placeholder="City" class="w-full	" required>
+      <input type="text" name="address" id="address" class="w-full	" placeholder="Address" required>
+      <select name="position" id="position" required>
+        <option value="" disabled selected>Select Position</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="FullStack Developer">Full Stack Developer</option>
+        <option value="data-scientist">Data Scientist</option>
+        <option value="devops-engineer">DevOps Engineer</option>
+        <option value="mobile-dev">Mobile App Developer</option>
+        <option value="system-admin">System Administrator</option>
+        <option value="network-engineer">Network Engineer</option>
+        <option value="security-analyst">Security Analyst</option>
+        <option value="cloud-engineer">Cloud Engineer</option>
+        <option value="game-dev">Game Developer</option>
+        <option value="ai-engineer">AI Engineer</option>
+        <option value="web-designer">Web Designer</option>
+        <option value="developer">Software Developer</option>
+        <option value="designer">UI/UX Designer</option>
+        <option value="manager">Project Manager</option>
+        <option value="analyst">Data Analyst</option>
+        <option value="tester">Quality Assurance Tester</option>
+        <option value="support">Customer Support</option>
+        <option value="marketing">Marketing Specialist</option>
+        <option value="sales">Sales Executive</option>
+        <option value="hr">Human Resources</option>
+        <option value="consultant">Business Consultant</option>
+        <option value="researcher">Research Scientist</option>
+        <option value="writer">Content Writer</option>
+      </select>
+      <textarea name="additional_info" id="additional_info" placeholder="Additional Information" rows="4"></textarea>
+      <button type="submit" class="w-3/12 p-2 rounded-md bg-amber-500	">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+----- Application Summary -----
+First Name: Nash
+Last Name: Claracay
+Email: nashclaracay28@gmail.com
+Phone: 09991234456
+Position: Frontend Developer
+Country: usa
+City: Manila
+Address: Gumamela
+Additional Information: Fast Learner, Willing to Learn More!
+------------------------------
+Thank you for your application, Nash!
+We will review your application and get back to you soon.
+==============================
+
