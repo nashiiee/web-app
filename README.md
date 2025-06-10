@@ -1,7 +1,7 @@
 # Web Application Development Project
 
 **Name:** Nash Claracay  
-**Program:** Bachelor of Science in Information Technology  
+**Program:** Bachelor of Science in Computer Science  
 **Course Code:** IT 6314 – Web Application Development
 
 ---
