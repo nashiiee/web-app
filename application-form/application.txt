@@ -13,3 +13,18 @@ Thank you for your application, Nash!
 We will review your application and get back to you soon.
 ==============================
 
+----- Application Summary -----
+First Name: John
+Last Name: Doe
+Email: john@email.com
+Phone: (312) 555-0198
+Position: Software Engineer
+Country: usa
+City: Manila
+Address: 123 Maple Street Springfield, IL 62704
+Additional Information: Fast Learner, Willing to Learn <3
+------------------------------
+Thank you for your application, John!
+We will review your application and get back to you soon.
+==============================
+
