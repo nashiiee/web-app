@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Order Form</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <h1 class="main-text-header"> ☕ Coffee Shop Order Form</h1>
+    <div class="container">
+       <form method="POST" action="../orders/retrieve.php">
+          <label for="order_id">Order ID: </label>
+          <input type="text" name="order_id" id="order_id">
+
+          <button type="submit">Get Order Details</button>
+       </form>
+    </div>
+    <form action="index.html" style="text-align: center;">
+      <button type="submit">Main Menu</button>
+    </form>
+</body>
+</html>

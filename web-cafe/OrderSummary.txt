@@ -1,11 +1,11 @@
 Order Summary
 -----------------
-Name: nash
-Coffee Type: mocha
+Name: Nash
+Coffee Type: espresso
 Size: small
-Extras: sugar
-Total Price: 405.75
-Special Instructions: russel jr
+Extras: cream
+Total Price: 260.5
+Special Instructions: Iced coffee
 -----------------
 Thank you for your order!
 -----------------

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/pngtree-task-management-business-planning-app-illustration-vector-image_15623958.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2em;
+  width: 100%;
+}
+
+h1, h2 {
+  color: rgb(0, 57, 75);
+}
+
+.container {
+  width: 800px;
+  margin-top: 0;
+}
+
+.main-text-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sub-description { 
+  width: 100%;
+  text-align: center;
+}
+
+.ul-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-ul {
+  list-style: none;
+}
+
+.ul-container li {
+  flex: 1 1 0;
+  text-align: center;
+  margin: 25px;
+}
+
+.ul-container li:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.main-ul li>a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.main-ul li>a:hover {
+  background-color: rgb(69, 255, 255);
+  border: none;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #0077b6;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.5em 1em;
+  text-align: left;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #023e8a;
+}
+
+td {
+  padding: 1.2em 1em;
+  border-bottom: 1px solid #e0e0e0;
+  color: #222;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) td {
+  background: #e9f5fb;
+}
+
+tr:hover td {
+  background: #d0f0ff;
+  transition: background 0.2s;
+}
+
+#td-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+form button,
+.update-btn,
+.delete-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+form button:hover,
+.update-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #00cfff;
+  color: #fff;
+}
+
+.update-btn:hover {
+  background-color: #009ec3;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #ff6b6b !important;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #d90429 !important;
+}
+
+.insert-form {
+  background: rgba(255,255,255,0.92);
+  padding: 2.5em 2em 2em 2em;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0002;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 100px auto 0 auto;
+}
+
+.insert-form label {
+  font-weight: 500;
+  color: #0077b6;
+  margin-top: 0.5em;
+}
+
+.insert-form input,
+.insert-form textarea,
+.insert-form select {
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 1px solid #bcdff1;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  margin-bottom: 0.8em;
+  background: #f4fbfd;
+  transition: border 0.2s;
+}
+
+.insert-form input:focus,
+.insert-form textarea:focus,
+.insert-form select:focus {
+  border: 1.5px solid #0077b6;
+  outline: none;
+}
+
+.insert-form button {
+  background: #0077b6;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9em 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  margin-top: 1em;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.insert-form button:hover {
+  background: #00b4d8;
+  transform: scale(1.04);
+}
+
+.show-tasks {
+  margin-bottom: 2rem;
+  color: rgb(0, 57, 75);
+}
+
+@media (max-width: 768px) {
+  .container, .insert-form {
+    width: 100%;
+    padding: 1em;
+  }
+
+  th, td {
+    padding: 0.5em;
+    font-size: 0.95em;
+  }
+
+  .insert-form {
+    margin-top: 2em;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 800px;
+  }
+}
