@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0 0 1rem 0;
+}
+
+p {
+  text-align: start;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #636363;
+}
+
+.header-container {
+  width: 100vw;
+  padding: 1rem 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.h-divider {
+  width: 100%;
+  border: 2px solid #9DA5B1;
+}
+
+.hero-section-container {
+  display: flex;
+  flex: 1; 
+  align-items: stretch;
+  width: 100%;
+}
+
+.left-section {
+  width: 30rem;
+  height: 100%; 
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid #9DA5B1;
+}
+
+
+.feedback-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack option rows vertically */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; /* Space between label and icon */
+}
+
+.label {
+  font-size: 1rem;
+  min-width: 8rem; /* Align all labels */
+  color: #333;
+}
+
+.label.active-label {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.circle {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.circle i {
+  color: #9DA5B1;
+  font-size: 1.2rem;
+}
+
+
+.circle:hover {
+  background-color: #0F67B1;
+}
+
+.circle:hover i {
+  color: #FAFFAF;
+}
+
+.circle.active {
+  background-color: #0F67B1;
+  box-shadow: 0 0 10px #0077b6;
+}
+
+.circle.active i {
+  color: #FAFFAF;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50px;
+  background-color: #96C9F4;
+}
+
+.circle i {
+  pointer-events: none;
+}
+
+.option-row:last-child .circle::after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hero-section-container {
+    flex-direction: column;
+  }
+  .left-section {
+    width: 100%;
+    min-width: 0;
+  }
+  .feedback-options {
+    padding-left: 2rem;
+  }
+}
+
+
+/* Right Section CSS */
+
+.right-section {
+  flex: 1;        
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-section-header{ 
+  padding: 2.2rem 2rem;
+}
+.right-section-header h2 {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.r-divider{
+  border-color: #96C9F4;
+}
+
+.box-feedback {
+  display: flex;
+  flex-direction: start;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2.2rem 2rem;
+}
+.box {
+  width: 130px;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 0px rgb(157,165,177);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.box:hover {
+  background-color: #0F67B1;
+}
+
+.box:hover i, .box:hover .label {
+  color: #FAFFAF;
+}
+
+
+.box i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #DCDCDC;
+}
+
+.box .label {
+  color: #9DA5B1;
+  text-align: center;
+}
+
+.feedback-textarea-container {
+  width: 100%;
+}
+
+.feedback-textarea{ 
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #9DA5B1;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content:end;
+}
+
+.button-group button:first-child {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid #0F67B1;
+  color: #0F67B1;
+  cursor: pointer;
+}
+
+.button-group button:last-child {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #0F67B1;
+  color: #fff;
+  border: none;
+}
