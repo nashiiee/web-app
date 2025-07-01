@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Homepage</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <h2>Share Your Feedback</h2>
+      <p>We value your opinions, take a little time to evaluate us.</p>
+    </div>
+    <hr />
+    <form action="../feedbacks-backend/feedback.php" method="POST" id="feedback-form">
+      <div class="name-section">
+        <label for="nickname">Enter your name (or leave blank for anonymous):</label>
+        <input type="text" class="anonymous-input" name="nickname" id="nickname" />
+        <button type="button" id="start-feedback-btn">Start</button>
+      </div>
+      <div class="hero-section" style="display: none;">
+        <div class="left-section">
+          <div class="left-section-text js-left-section-text"></div>
+          <div class="icons"></div>
+        </div>
+        <hr class="left-section-hr" />
+        <div class="right-section"></div>
+      </div>
+    </form>
+  </div>
+  <script src="../script/feedback.js"></script>
+</body>
+</html>

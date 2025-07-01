@@ -4,29 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application PHP</title>
-  <link rel="stylesheet" href="styles/applicationphp.css">
+  <link rel="stylesheet" href="../styles/applicationphp.css">
 </head>
 <body>
   <?php
-  function generateApplicationHtmlSummary() {
-    $fields = [
-      'First Name' => htmlspecialchars($_POST['first_name']),
-      'Last Name' => htmlspecialchars($_POST['last_name']),
-      'Email' => htmlspecialchars($_POST['email']),
-      'Phone' => htmlspecialchars($_POST['phone']),
-      'Position' => htmlspecialchars($_POST['position']),
-      'Country' => htmlspecialchars($_POST['country']),
-      'City' => htmlspecialchars($_POST['city']),
-      'Address' => htmlspecialchars($_POST['address']),
-      'Additional Information' => htmlspecialchars($_POST['additional_info'] ?? '')
-    ];
-    $output = "<table class='app-summary-table'>";
-    foreach ($fields as $label => $value) {
-      $output .= "<tr><th>$label</th><td>$value</td></tr>";
-    }
-    $output .= "</table>";
-    return $output;
-  }
+  include "../database/applicationdb.php";
 
   function generateApplicationTextSummary() {
     $fields = [
@@ -52,11 +34,34 @@
   }
 
   function saveApplication($applicationData) {
-    $filePath = __DIR__ . "/application.txt";
+    $filePath = __DIR__ . "../../application.txt";
     $file = fopen($filePath, "a") or die("Unable to open file at $filePath!");
     fwrite($file, $applicationData);
     fclose($file);
-    echo "<p>Application saved successfully</p>";
+    echo "<p>Application saved to file successfully</p>";
+  }
+
+  function insertApplicationToDB($conn) {
+    try {
+      $sql = "INSERT INTO applicants 
+        (first_name, last_name, email, phone, country, city, address, position, additional_info)
+        VALUES (:first_name, :last_name, :email, :phone, :country, :city, :address, :position, :additional_info)";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute([
+        ':first_name' => $_POST['first_name'],
+        ':last_name' => $_POST['last_name'],
+        ':email' => $_POST['email'],
+        ':phone' => $_POST['phone'],
+        ':country' => $_POST['country'],
+        ':city' => $_POST['city'],
+        ':address' => $_POST['address'],
+        ':position' => $_POST['position'],
+        ':additional_info' => $_POST['additional_info'] ?? ''
+      ]);
+      echo "<p>Application saved to database successfully</p>";
+    } catch (PDOException $e) {
+      echo "<p style='color:red;'>Database error: " . htmlspecialchars($e->getMessage()) . "</p>";
+    }
   }
 
   function displayApplicationSummary() {
@@ -85,13 +90,27 @@
       echo "<div style='margin-top:1.5em; font-size:1.1em; color:black; text-align:center;'>";
       echo "Thank you for your application, <b>" . htmlspecialchars($_POST['first_name']) . "</b>!<br>";
       echo "We will review your application and get back to you soon.";
+      echo "<form action='../pages/index.html'>
+              <button type='submit' class='main-menu-btn'>Main Menu</button>
+            </form>";
       echo "</div>";
       echo "</div>";
 
+      // Save to text file
       $applicationData = generateApplicationTextSummary();
       echo "<div class='save-application'>";
       saveApplication($applicationData);
       echo "</div>";
+
+      // Save to database
+      try {
+        global $db_host, $db_name, $db_username, $db_password;
+        $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_username, $db_password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        insertApplicationToDB($conn);
+      } catch (PDOException $e) {
+        echo "<p style='color:red;'>Database connection failed: " . htmlspecialchars($e->getMessage()) . "</p>";
+      }
     }
   }
 

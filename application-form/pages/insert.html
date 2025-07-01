@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="../styles/application.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-text-header">Job Application Form</h1>
+    <form method="POST" action="../application/application.php" class="container-form">
+      <div class="input-grid">
+        <div class="form-group">
+          <input type="text" name="first_name" id="first_name" placeholder="First Name" class="info-inputs" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="info-inputs" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Email Address" class="info-inputs" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="phone" id="phone" placeholder="Phone Number" class="info-inputs" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <select name="country" id="country" required>
+          <option value="" disabled selected>Select Country</option>
+          <option value="philippines">Philippines</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
+          <option value="japan">Japan</option>  
+          <option value="china">China</option>
+          <option value="brazil">Brazil</option>
+          <option value="south-africa">South Africa</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" name="city" id="city" placeholder="City" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="address" id="address" placeholder="Address" required>
+      </div>
+      <div class="form-group">
+        <select name="position" id="position" required>
+          <option value="" disabled selected>Select Position</option>
+          <option value="Software Engineer">Software Engineer</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Backend Developer">Backend Developer</option>
+          <option value="FullStack Developer">Full Stack Developer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="DevOps Engineer">DevOps Engineer</option>
+          <option value="Mobile App Developer">Mobile App Developer</option>
+          <option value="System Administrator">System Administrator</option>
+          <option value="Network Engineer">Network Engineer</option>
+          <option value="Security Analyst">Security Analyst</option>
+          <option value="Cloud Engineer">Cloud Engineer</option>
+          <option value="Game Developer">Game Developer</option>
+          <option value="AI Engineer">AI Engineer</option>
+          <option value="Web Designer">Web Designer</option>
+          <option value="Software Developer">Software Developer</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="Project Manager">Project Manager</option>
+          <option value="Data Analyst">Data Analyst</option>
+          <option value="Quality Assurance Tester">Quality Assurance Tester</option>
+          <option value="Customer Support">Customer Support</option>
+          <option value="Marketing Specialist">Marketing Specialist</option>
+          <option value="Sales Executive">Sales Executive</option>
+          <option value="Human Resources">Human Resources</option>
+          <option value="Business Consultant">Business Consultant</option>
+          <option value="Research Scientist">Research Scientist</option>
+          <option value="Content Writer">Content Writer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="additional_info" id="additional_info" placeholder="Additional Information" rows="4"></textarea>
+      </div>
+      <div class="btn-container">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <button class="home-button" type="button">Home</button>
+  </div>
+  <script>
+    document.querySelector('.home-button').addEventListener('click', function() {
+      window.location.href = '../pages/index.html';
+    });
+  </script>
+</body>
+</html>

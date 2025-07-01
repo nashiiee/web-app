@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: #0077b6;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff; 
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.2);
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 1.5px solid #bcdff1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  background: #f6fbff;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+button {
+  padding: 0.7em 1.5em;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.applicant-deleted {
+  text-align: center;
+  color: #0077b6;
+  font-size: 1.2rem;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.return-to-main-btn {
+  display: block;
+  margin: 1.5em auto 0 auto;
+  width: fit-content;
+  padding: 0.7em 1.5em;
+  background: #0077b6;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #0077b622;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.return-to-main-btn:hover {
+  background: #023e8a;
+  color: #faffaf;
+}

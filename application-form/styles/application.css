@@ -1,39 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
-input {
-  border: 1px solid black !important;
-  padding: 10px !important;
-  border-radius: 10px !important;
+.container {
+  width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
 }
 
-input[type="file"] {
-  width: 60%;
+.main-text-header {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container-form {
+  padding: 32px 24px;
+  background-color: #0077b6;
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Shared styles for all inputs, selects, textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  background: #fff;
 }
 
 textarea {
-  border: 1px solid black !important;
-  padding: 10px !important;
-  border-radius: 10px !important;
-  width: 100% !important;
-}
-textarea::placeholder {
-  color: black !important;
+  resize: vertical;
+  min-height: 80px;
 }
 
-select {
-  display: block !important;
-  border: 1px solid black !important;
-  padding: 10px !important;
-  border-radius: 10px !important;
-  width: 100% !important;
-}
-
+textarea::placeholder,
 input::placeholder {
-  color: black !important;
+  color: #333;
 }
 
-.file-input {
-  border: none !important;
+/* Input Grid (First 4 inputs in 2x2 layout) */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 18px;
+}
+
+.input-grid .form-group {
+  margin: 0;
+}
+
+/* Other Form Groups */
+.form-group {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 18px;
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #005f8a;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Submit Button Container */
+.btn-container {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Home Button */
+.home-button {
+  position: absolute;
+  bottom: 55px;
+  right: 50px;
+  padding: 8px 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
 }

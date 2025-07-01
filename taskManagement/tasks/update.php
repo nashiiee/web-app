@@ -1,5 +1,4 @@
 <?php
-// filepath: /Applications/XAMPP/xamppfiles/htdocs/web-app-2433/taskManagement/tasks/update.php
 include "../database/database.php";
 
 $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_username, $db_password);
@@ -25,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ':id' => $id
     ]);
 
-    // Redirect to show.php after update
     header("Location: ../pages/show.php");
     exit();
 } else if (isset($_GET['id'])) {

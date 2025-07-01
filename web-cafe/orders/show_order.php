@@ -4,7 +4,7 @@
   try {
     $conn = new PDO("mysql:host$db_host; dbname=$db_name", $db_username, $db_password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * FROM orders")
+    $stmt = $conn->prepare("SELECT * FROM orders");
     $stmt->execute();
     $results = $stmt->fetchAll();
 

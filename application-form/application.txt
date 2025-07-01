@@ -28,3 +28,138 @@ Thank you for your application, John!
 We will review your application and get back to you soon.
 ==============================
 
+----- Application Summary -----
+First Name: Nash
+Last Name: Claracay
+Email: nash.claracay2004@gmail.com
+Phone: 555.756.123
+Position: Software Engineer
+Country: usa
+City: manila
+Address: 742 Evergreen Terrace
+Additional Information: Software Engineer is my dream
+------------------------------
+Thank you for your application, Nash!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: app
+Last Name: dev
+Email: john@email.com
+Phone: 0912-1123-332
+Position: DevOps Engineer
+Country: uk
+City: new york
+Address: 88 Golden Gate Blvd
+Additional Information: dasdad
+------------------------------
+Thank you for your application, app!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: Nash
+Last Name: Claracay
+Email: nashclaracay28@gmail.com
+Phone: 5512.1234.512
+Position: Software Engineer
+Country: philippines
+City: Manila
+Address: 123 Maple Street Springfield, IL 62704
+Additional Information: Sofware Engineer is My Dream!
+------------------------------
+Thank you for your application, Nash!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: John
+Last Name: Doe
+Email: john@email.com
+Phone: (415) 555-0234
+Position: FullStack Developer
+Country: philippines
+City: Manila
+Address: 550 Park Avenue
+Additional Information: Full Stack
+------------------------------
+Thank you for your application, John!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: Alex
+Last Name: Carter
+Email: alex.carter@email.com
+Phone: (312) 555-0198
+Position: Data Analyst
+Country: usa
+City: Washington DC
+Address: 742 Evergreen Terrace
+Additional Information: 
+------------------------------
+Thank you for your application, Alex!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: asdasd
+Last Name: asdasd
+Email: asdas@asdad
+Phone: asdasd
+Position: Mobile App Developer
+Country: uk
+City: asdasd
+Address: asda
+Additional Information: asdasdas
+------------------------------
+Thank you for your application, asdasd!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: asdasd
+Last Name: asdasd
+Email: asdasd@asdasdas
+Phone: asdasd
+Position: AI Engineer
+Country: australia
+City: asdas
+Address: asdasd
+Additional Information: asdasda
+------------------------------
+Thank you for your application, asdasd!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: asdasd
+Last Name: asdasd
+Email: asdas@asdad
+Phone: asdasd
+Position: System Administrator
+Country: uk
+City: asdad
+Address: asdasd
+Additional Information: asdasd
+------------------------------
+Thank you for your application, asdasd!
+We will review your application and get back to you soon.
+==============================
+
+----- Application Summary -----
+First Name: John
+Last Name: Doe
+Email: john@email.com
+Phone: (312) 555-0198
+Position: FullStack Developer
+Country: philippines
+City: manila
+Address: 742 Evergreen Terrace
+Additional Information: Full Stack is my Dream
+------------------------------
+Thank you for your application, John!
+We will review your application and get back to you soon.
+==============================
+

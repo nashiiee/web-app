@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Order Form</title>
+    <link rel="stylesheet" href="../styles/delete.css">
+</head>
+
+<body>
+    <h1 class="main-text-header"> ☕ Coffee Shop Order Form</h1>
+    <div class="container">
+        <form method="POST" action="../application/delete_applicant.php">
+          <label for="delete_id">Delete ID: </label>
+          <input type="text" name="delete_id" id="delete_id" required>
+          <button type="submit">Delete Order</button>
+        </form>
+        <br />
+        <form action="../pages/index.html">
+          <button type="submit">Main Menu</button>
+        </form>
+    </div>
+</body>
+</html>
